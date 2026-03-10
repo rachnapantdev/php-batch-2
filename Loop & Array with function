@@ -1,0 +1,60 @@
+Loops:
+1. while loop
+2. do while loop
+3. for loop
+4. foreach loop
+
+1. while loop: It is an Entry control loop. In which condition is checked before entering the loop.
+Syntax:
+	initialization;
+	while(condition){
+		Statements;
+		inc/dec;
+	}
+2. do while loop: It is known as Exit control loop. In which condition is checked after executing the statements once.
+Syntax:
+	do{
+		Statements;
+		inc/dec;
+	}while(condition);
+
+
+3. for loop:
+	for(initialization; condition; inc/dec){
+		Statements;
+	}
+_____________________________________________________________________________________
+
+
+Types of function
+1. function without parameter
+2. function with parameter
+3. function with return keyword
+
+Syntax:
+1. function functionName(){
+		Statements;
+	}
+2. function functionName(parameters seprated by comma){
+		Statements;
+	}
+3. function functionName(){
+
+	return statements;
+	}
+
+
+GITHUB
+
+
+
+
+
+
+
+
+
+
+
+
+
