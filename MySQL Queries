@@ -1,0 +1,92 @@
+Data : It is a raw fact and figure.
+Database : Collection of data in tabular form 
+		Table =  rows + columns
+SQL :  Structured Query Language
+SQL is a Relational Database Management System.
+
+Table : Entity
+Column: Attributes
+Rows :  Records or Tuple
+_____________________________________________________
+
+		Employee
+	ID	NAME	CITY
+	1	Aman	Delhi
+	2	Suman	Nainital
+	3	Kiran	Agra
+
+Entity :  Employee 
+Attributes :  ID, NAME, CITY
+Records : 
+	1, Aman, Delhi
+
+================================= Queries ====================================
+
+1. Create Database 
+	Syntax:	create database databaseName;
+
+2. Use Database
+	Syntax:	use databaseName;
+
+3. Create Table :
+	Syntax: 
+	create table tableName (colName datatype (size) , ......);
+
+	Basic Data Type 
+	int
+	decimal
+	date
+	varchar
+
+
+_________________________________________________________________
+
+Insert Data in the table
+
+Syntax: 	insert into tableName (colName1, colName2,....) values (values seprated by comma);
+
+Example
+
+create database sms;
+
+CREATE table student (sid int, sname varchar(22), course varchar(33), doj date);
+
+INSERT INTO student (sid, sname, course, doj)
+	VALUES (1, 'Aman','BCA','2012-2-22');
+
+
+
+INSERT into student VALUES(2,'Soni','MCA','2025-12-4');
+INSERT into student (sid, sname, course) VALUES (3, 'Naman','MCA');
+
+
+
+
+Keys :
+1. Primary Key : To make a column unique
+2. Foreign Key : It is used to link one table to another 
+
+How to create Primary Key?
+create table tableName(colName data type (size) Primary Key, colName2 datatype(size),.... );
+
+
+How to create foreign Key 
+
+create table tableName(colName data type(size), ....., foreign Key fname reference tableName (colName))
+
+create TABLE dept (did int PRIMARY KEY, dname varchar(44))
+
+
+INSERT INTO dept(did, dname)
+VALUES(1,'HR'),
+(2,'Sales'),
+(3,'IT'),
+(4,'Marketing');
+
+create TABLE emp(eid int PRIMARY key AUTO_INCREMENT, ename varchar(33), d_id int , FOREIGN KEY (d_id) REFERENCES dept(did));
+
+INSERT INTO emp(ename, d_id)
+VALUES('Kamal',1),('Soni',2),('Sher Khan' ,2),
+('Amit',3),('Sumit',4)
+
+	
